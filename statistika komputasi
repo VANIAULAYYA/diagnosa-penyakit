@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnosa Gejala</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    select, button {
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 100%;
+    }
+    #hasilDiagnosa {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Form Diagnosa Gejala</h1>
+  <form id="diagnosaForm">
+    <div class="gejala-group">
+      <label for="gejala1">Gejala 1: Sesak Napas</label>
+      <select id="gejala1" name="gejala1">
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+      </select>
+    </div>
+
+    <div class="gejala-group">
+      <label for="gejala2">Gejala 2: Batuk</label>
+      <select id="gejala2" name="gejala2">
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+      </select>
+    </div>
+
+    <div class="gejala-group">
+      <label for="gejala3">Gejala 3: Batuk Berdarah</label>
+      <select id="gejala3" name="gejala3">
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+      </select>
+    </div>
+
+    <div class="gejala-group">
+      <label for="gejala4">Gejala 4: Berdahak</label>
+      <select id="gejala4" name="gejala4">
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+      </select>
+    </div>
+
+    <div class="gejala-group">
+      <label for="gejala5">Gejala 5: Demam</label>
+      <select id="gejala5" name="gejala5">
+        <option value="1">Ya</option>
+        <option value="0">Tidak</option>
+      </select>
+    </div>
+
+    <div class="gejala-group">
+        <label for="gejala6">Gejala 6: Lemas</label>
+        <select id="gejala6" name="gejala6">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala7">Gejala 7: Nafsu Makan Berkurang</label>
+        <select id="gejala7" name="gejala7">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala8">Gejala 8: Mual</label>
+        <select id="gejala8" name="gejala8">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala9">Gejala 9: Muntah</label>
+        <select id="gejala9" name="gejala9">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala10">Gejala 10: BAB</label>
+        <select id="gejala10" name="gejala10">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala11">Gejala 11: BAK</label>
+        <select id="gejala11" name="gejala11">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala12">Gejala 12: Riwayat Penyakit Asma</label>
+        <select id="gejala12" name="gejala12">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala13">Gejala 13: Riwayat Penyakit Stroke</label>
+        <select id="gejala13" name="gejala13">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala14">Gejala 14: Riwayat Penyakit Tuberkulosis</label>
+        <select id="gejala14" name="gejala14">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala15">Gejala 15: Sakit Kepala</label>
+        <select id="gejala15" name="gejala15">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala16">Gejala 16: Nyeri Ulu Hati</label>
+        <select id="gejala16" name="gejala16">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala17">Gejala 17: Nyeri Dada</label>
+        <select id="gejala17" name="gejala17">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala18">Gejala 18: Berat Badan Menurun</label>
+        <select id="gejala18" name="gejala18">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+  
+      <div class="gejala-group">
+        <label for="gejala19">Gejala 19: Keringat Malam</label>
+        <select id="gejala19" name="gejala19">
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+      </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <div id="hasilDiagnosa"></div>
+
+  <script>
+    document.getElementById("diagnosaForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      console.log("Form submitted");
+
+      // Ambil nilai dari input gejala
+      const gejala = {};
+      for (let i = 1; i <= 5; i++) { // Mengurangi jumlah gejala untuk kesederhanaan
+        const gejalaVal = document.getElementById(gejala${i}).value;
+        gejala[gejala${i}] = gejalaVal === "1" ? 1 : 0;
+      }
+      
+      console.log(gejala);
+
+      // Probabilitas gejala pada beberapa penyakit (Disederhanakan untuk 5 gejala)
+      const probabilitas = {
+  asma: {
+    gejala1: 0.9,
+    gejala2: 0.8,
+    gejala3: 0.1,
+    gejala4: 0.7,
+    gejala5: 0.5,
+    gejala6: 0.6,
+    gejala7: 0.4,
+    gejala8: 0.2,
+    gejala9: 0.3,
+    gejala10: 0.4,
+    gejala11: 0.3,
+    gejala12: 0.8,
+    gejala13: 0.2,
+    gejala14: 0.1,
+    gejala15: 0.4,
+    gejala16: 0.5,
+    gejala17: 0.6,
+    gejala18: 0.4,
+    gejala19: 0.3
+  },
+  pneumonia: {
+    gejala1: 0.8,
+    gejala2: 0.7,
+    gejala3: 0.5,
+    gejala4: 0.6,
+    gejala5: 0.9,
+    gejala6: 0.5,
+    gejala7: 0.6,
+    gejala8: 0.4,
+    gejala9: 0.3,
+    gejala10: 0.4,
+    gejala11: 0.3,
+    gejala12: 0.6,
+    gejala13: 0.4,
+    gejala14: 0.3,
+    gejala15: 0.5,
+    gejala16: 0.5,
+    gejala17: 0.7,
+    gejala18: 0.6,
+    gejala19: 0.6
+  },
+  tuberkulosis: {
+    gejala1: 0.6,
+    gejala2: 0.5,
+    gejala3: 0.6,
+    gejala4: 0.5,
+    gejala5: 0.7,
+    gejala6: 0.4,
+    gejala7: 0.6,
+    gejala8: 0.4,
+    gejala9: 0.3,
+    gejala10: 0.5,
+    gejala11: 0.3,
+    gejala12: 0.5,
+    gejala13: 0.1,
+    gejala14: 0.8,
+    gejala15: 0.5,
+    gejala16: 0.4,
+    gejala17: 0.5,
+    gejala18: 0.7,
+    gejala19: 0.6
+  },
+  PPOK: {
+    gejala1: 0.9,
+    gejala2: 0.7,
+    gejala3: 0.4,
+    gejala4: 0.6,
+    gejala5: 0.5,
+    gejala6: 0.6,
+    gejala7: 0.5,
+    gejala8: 0.3,
+    gejala9: 0.4,
+    gejala10: 0.6,
+    gejala11: 0.3,
+    gejala12: 0.7,
+    gejala13: 0.2,
+    gejala14: 0.2,
+    gejala15: 0.4,
+    gejala16: 0.5,
+    gejala17: 0.7,
+    gejala18: 0.6,
+    gejala19: 0.5
+  },
+  bronkitis: {
+    gejala1: 0.7,
+    gejala2: 0.9,
+    gejala3: 0.2,
+    gejala4: 0.8,
+    gejala5: 0.4,
+    gejala6: 0.5,
+    gejala7: 0.6,
+    gejala8: 0.3,
+    gejala9: 0.3,
+    gejala10: 0.5,
+    gejala11: 0.3,
+    gejala12: 0.4,
+    gejala13: 0.3,
+    gejala14: 0.1,
+    gejala15: 0.4,
+    gejala16: 0.3,
+    gejala17: 0.5,
+    gejala18: 0.3,
+    gejala19: 0.2
+  },
+  dyspnea: {
+    gejala1: 0.8,
+    gejala2: 0.7,
+    gejala3: 0.4,
+    gejala4: 0.6,
+    gejala5: 0.7,
+    gejala6: 0.6,
+    gejala7: 0.5,
+    gejala8: 0.4,
+    gejala9: 0.2,
+    gejala10: 0.3,
+    gejala11: 0.2,
+    gejala12: 0.7,
+    gejala13: 0.3,
+    gejala14: 0.2,
+    gejala15: 0.4,
+    gejala16: 0.3,
+    gejala17: 0.6,
+    gejala18: 0.5,
+    gejala19: 0.3
+  }
+};
+
+      // Inisialisasi probabilitas penyakit
+  let probAsma = 1, probPneumonia = 1, probTuberkulosis = 1, probPPOK = 1, probBronkitis = 1, probDyspnea = 1;
+
+// Hanya hitung untuk gejala yang diberi opsi "Ya"
+for (let i = 1; i <= 19; i++) {
+  if (gejala[gejala${i}] === 1) {
+    probAsma *= probabilitas.asma[gejala${i}] || 1;
+    probPneumonia *= probabilitas.pneumonia[gejala${i}] || 1;
+    probTuberkulosis *= probabilitas.tuberkulosis[gejala${i}] || 1;
+    probPPOK *= probabilitas.PPOK[gejala${i}] || 1;
+    probBronkitis *= probabilitas.bronkitis[gejala${i}] || 1;
+    probDyspnea *= probabilitas.dyspnea[gejala${i}] || 1;
+  }
+}
+
+// Menampilkan hasil diagnostik
+let hasil = `Probabilitas Asma: ${probAsma.toFixed(6)}<br>
+             Probabilitas Pneumonia: ${probPneumonia.toFixed(6)}<br>
+             Probabilitas Tuberkulosis: ${probTuberkulosis.toFixed(6)}<br>
+             Probabilitas PPOK: ${probPPOK.toFixed(6)}<br>
+             Probabilitas Bronkitis: ${probBronkitis.toFixed(6)}<br>
+             Probabilitas Dyspnea: ${probDyspnea.toFixed(6)}`;
+document.getElementById("hasilDiagnosa").innerHTML = hasil;
+});
+  </script>
+
+</body>
+</html>
